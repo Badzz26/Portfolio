@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="home-section">
+    <!-- Navigation section -->
+
+    <div class="navbar" id="nav_id">
+        <a href="#home-section" class="active" onclick="homeActive()" id="a-home">Home</a>
+        <a href="#about-me-section" class="inactive" onclick="aboutActive()" id="a-about-me">About Me</a>
+        <a href="#skills-section" class="inactive" onclick="skillsActive()" id="a-skills">Skills</a>
+        <a href="#projects-section" class="inactive" onclick="projectsActive()" id="a-projects">Projects</a>
+        <a href="#contact-me-section" class="inactive" onclick="contactActive()" id="a-contact-me">Contact Me</a>
+        <a href="javascript:void(0)" class="bars" onclick="openBars()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Home section -->
+
+    <section class="home-section">
+        <h1 class="hero-heading">Hello, I am <span class="hero-name">BADAL KAMLI</span> <br>A <span
+                class="hero-name">WEB DEVELOPER</span> <br> & <br>To be <span class="hero-name">ETHICAL HACKER</span>
+        </h1>
+        <div class="img-shape-or"><img src="images/myimage.jpg"
+                alt="" class="my-img"></div>
+        <div class="img-shape-bl"></div>
+    </section>
+
+    <!-- About section -->
+
+    <section class="about-section" id="about-me-section">
+        <h1 class="about-heading">ABOUT ME</h1>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h1 class="about-title">Personal Detail</h1>
+                <p class="about-desc">
+                    I am a prefinal year undergrad at Parul University, Vadodara, Gujarat. I am studying Computer
+                    Science with specialization as Cybersecurity.
+                </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h1 class="about-title">Education Detail</h1>
+                <p class="about-desc">
+                    Btech - 9.02cpi (2024)
+                    <br>
+                    HSC - 76% (2019)
+                    <br>
+                    SSC - 85% (2017)
+                </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h1 class="about-title">Dreams</h1>
+                <p class="about-desc">
+                    Cybersecurity proffessional
+                    <br>
+                    Web developer/designer
+                    <br>
+                    Being a philanthropist
+                    <br>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILL SECTION -->
+
+    <section class="skill-section" id="skills-section">
+        <h1 class="skill-heading">SKILLS</h1>
+        <table class="skill-table">
+            <tr>
+                <td>
+                    <div class="skill-level">
+                        <div class="html5"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="skill-level">
+                        <div class="css"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="skill-level">
+                        <div class="js"></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 class="skill-name">HTML/HTML5</h1>
+                </td>
+                <td>
+                    <h1 class="skill-name">CSS/CSS3</h1>
+                </td>
+                <td>
+                    <h1 class="skill-name">JAVASCRIPT</h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="skill-level">
+                        <div class="C"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="skill-level">
+                        <div class="cpp"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="skill-level">
+                        <div class="java"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 class="skill-name">C</h1>
+                </td>
+                <td>
+                    <h1 class="skill-name">CPP</h1>
+                </td>
+                <td>
+                    <h1 class="skill-name">JAVA</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="skill-level">
+                        <div class="python"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="skill-level">
+                        <div class="sql"></div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 class="skill-name">PYTHON</h1>
+                </td>
+                <td>
+                    <h1 class="skill-name">SQL</h1>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PROJECT SECTION -->
+
+    <section class="project-section" id="projects-section">
+        <h1 class="project-heading">PROJECTS</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project3.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Personal Portfolio</h1>
+                    <p class="project-desc">
+                        This portfolio website describes about me as a person and my skills.
+                    </p>
+                    <div class="project-btn-grp">
+                        <div class="project-btn live"><a href="https://github.com/Badzz26/Portfolio">Visit</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Truibute page</h1>
+                    <p class="project-desc">
+                        This page is to test my basic skills of HTML and CSS.
+                    </p>
+                    <div class="project-btn-grp">
+                        <div class="project-btn live"><a href="https://codepen.io/badz/pen/wvpRxGx">Visit</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project1.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Registration form</h1>
+                    <p class="project-desc">
+                        This page is my very first attempt to make a project using HTML and CSS.
+                    </p>
+                    <div class="project-btn-grp">
+                        <div class="project-btn live"> <a href="https://codepen.io/badz/pen/NWXoPBN">Visit</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me section -->
+    <section class="contact-section" id="contact-me-section">
+        <h1 class="contact-heading">SEND ME A MESSAGE</h1>
+        <form action="connect.php" method="POST">
+            <table class="contact-table">
+                <tr>
+                    <td class="contact-left">
+                        <h1>Getting in touch is easy!</h1>
+                    </td>
+                    <td class="contact-right">
+                        <input type="text" name="nm" id="contact-name" autocomplete="off" placeholder="Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contact-left">Mail Me at<h3>badzkamli@gmail.com</a></h3>
+                    </td>
+                    <td class="contact-right">
+                        <input type="email" name="eml" id="contact-email" placeholder="Your Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contact-left">Call me on<h3>+91 9328417703</h3>
+                    </td>
+                    <td class="contact-right">
+                        <textarea name="msg" id="contact-msg" cols="30" rows="10"
+                            placeholder="Write here to hire me or work with me."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contact-left" id="contact-icons">
+                        <a href="https://www.linkedin.com/in/badal-kamli-69439921a/" class="fa fa-linkedin"></a>
+                        <a href="https://www.facebook.com/badal.kamli.54/" class="fa fa-facebook"></a>
+                        <a href="mailto: badzkamli@gmail.com" class="fa fa-envelope"></a>
+                    </td>
+                    <td class="contact-right">
+                        <button type="submit" class="form-submit-btn">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+</body>
+
+</html>
